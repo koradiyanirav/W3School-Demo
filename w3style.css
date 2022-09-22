@@ -102,6 +102,12 @@ html, body{
     top: 0;
 }
 
+@media screen (min-width: 480px) {
+    .navbar{
+        height: inherit;
+    }
+}
+
 .nav {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
