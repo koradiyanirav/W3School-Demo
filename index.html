@@ -1,35 +1,222 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.google.com/specimen/Roboto+Mono">
-    <style>
-        body {
-            margin: 0px;
-        }
-
-        .row {
-            color: #ffffff;
-            font-size: 18px;
-            font-family: 'Roboto Mono', monospace;
-            background-color: #04AA6D;
-            display: inline-block;
-            height: 200px;
-            text-align: center;
-            width: 500px;
-        }
-    </style>
+    <title>Bootstrap 5 Tutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="w3style.css">
 </head>
 
 <body>
-    <div class="row">
-        Next
-        <br>
-        Get Started with BS5
-    </div>
+    <header>
+        <div class="logo">
+            <a href="https://www.w3schools.com" class="logo5">
+                <img src="logo.png" alt="w3school" style="width: 44.75px;padding: 16px;" id="log">
+            </a>
+            <a class="lo w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" id="lo1"
+                href="javascript:void(0)" onclick="w3_open_nav('tutorials')">Tutorials
+                <i class="fa fa-caret-down" style="font-size: 20px; display: inline;"></i>
+                <i class="fa fa-caret-up" style="display: none;"></i>
+            </a>
+            <a href="#" class="lo w3-padding-24" id="lo1">References
+                <i class="fa fa-caret-down" style="font-size: 20px; display: inline;"></i>
+                <i class="fa fa-caret-up" style="display: none;"></i>
+            </a>
+            <a href="#" class="lo w3-padding-24" id="lo1">Exercises
+                <i class="fa fa-caret-down" style="font-size: 20px; display: inline;"></i>
+                <i class="fa fa-caret-up" style="display: none;"></i>
+            </a>
+            <a href="#" class="lo w3-padding-24" id="lo1">Video</a>
+            <div>
+                <div class="lo1 btn">
+                    <a href="https://www.w3schools.com/pro/index.php" class="btn btn4">Log in</a>
+                    <a href="https://campus.w3schools.com/collections/course-catalog"
+                        class="btn btn3">Free
+                        Website</a>
+                    <a href="https://www.w3schools.com/spaces/" class="btn btn2">Get Certified</a>
+                    <a href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com"
+                        class="btn btn1">Pro</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar nav">
+            <a href="https://www.w3schools.com/default.asp"><i class="fa-sharp fa-solid fa-house-chimney"
+                    style="height: 20px;width: 22px;"></i></a>
+            <a href="https://www.w3schools.com/html/default.asp"
+                style="padding-left:18px!important;padding-right:18px!important;">HTML</a>
+            <a href="https://www.w3schools.com/css/default.asp">CSS</a>
+            <a href="https://www.w3schools.com/js/default.asp">JAVASCRIPT</a>
+            <a href="https://www.w3schools.com/sql/default.asp">SQL</a>
+            <a href="https://www.w3schools.com/python/default.asp">PYTHON</a>
+            <a href="https://www.w3schools.com/php/default.asp">PHP</a>
+            <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" class="her">BOOTSTRAP</a>
+            <a href="https://www.w3schools.com/howto/default.asp">HOW TO</a>
+            <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS</a>
+            <a href="https://www.w3schools.com/java/default.asp">JAVA</a>
+            <a href="https://www.w3schools.com/jquery/default.asp">JQUERY</a>
+            <a href="https://www.w3schools.com/c/index.php">C</a>
+            <a href="https://www.w3schools.com/cpp/default.asp">C++</a>
+            <a href="https://www.w3schools.com/cs/index.php">C#</a>
+            <a href="https://www.w3schools.com/r/default.asp">R</a>
+            <div class="nav1">
+                <a href="#"><i class="fa-solid fa-earth-americas" id="di"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass" id="di"></i></a>
+            </div>
+        </div>
+        <div>
+            <div class="sidebar">
+                <h1 class="sidenav">Bootstrap 5 Tutorial</h1>
+                <a href="index.html"
+                    style="background-color: #04AA6D;color: white;">BS5 HOME</a>
+                <a href="Bs5getstarted.html">BS5 Get
+                    Started</a>
+                <a href="Bs5containers.html">BS5
+                    Containers</a>
+                <a href="Bs5grids.html">BS5 Grid
+                    Basic</a>
+                <a href="Bs5typography.html">BS5 Typography</a>
+                <a href="Bs5colors.html">BS5 Colors</a>
+                <a href="#">BS5 Table</a>
+                <a href="#">BS5 Images</a>
+                <a href="#">BS5 Jumbotron</a>
+                <a href="#">BS5 Alerts</a>
+                <a href="#">BS5 Buttons</a>
+                <a href="#">BS5 Button Groups</a>
+                <a href="#">BS5 Badges</a>
+                <a href="#">BS5 Progress Bars</a>
+                <a href="#">BS5 Spinners</a>
+                <a href="#">BS5 Pagination</a>
+                <a href="#">BS5 List Groups</a>
+                <a href="#">BS5 Cards</a>
+                <a href="#">BS5 Dropdowns</a>
+                <a href="#">BS5 Collapse</a>
+            </div>
+        </div>
+        <div style="margin-left: 220px;">
+            <div class="hello">
+                <h1 style="height: 63px;width: 875.828px;">Bootstrap 5 Tutorial</h1>
+                <div class="ho navbar" style="height: 45px;">
+                    <a href="#" class="home"> ❮ Home</a>
+                    <a href="#" class="home" style="float: right!important;">Next ❯</a>
+                </div>
+                <hr>
+                <div class="main">
+                    <p class="main2 row5" style="margin-top: 15px;">Bootstrap 5 is the newest version of <a
+                            href="#">Bootstrap</a>
+                        , which is the most popular HTML, CSS, and JavaScript framework for creating responsive,
+                        mobile-first websites.</p>
+                    <p class="main1">Bootstrap 5 is completely free to download and use!</p>
+                    <p class="main1"><a href="#" class="main3 main4"
+                            style="font-size: 18px;font-family: 'Source Sans Pro', sans-serif;margin-top: 6px;margin-bottom: 0px;">Start
+                            learning Bootstrap 5 now »</a></p>
+                </div>
+                <hr>
+                <h2>Try it Yourself Examples</h2>
+                <p class="pera">This tutorial contains hundreds of Bootstrap 5 examples.</p>
+                <p class="pera">With our online editor, you can edit the code, and click on a button to view the result.
+                </p>
+                <div class="pera1">
+                    <h3>Bootstrap 5 Example</h3>
+                    <div class="pera2">
+                        <h1>My First Bootstrap Page</h1>
+                        <p>Resize this responsive page to see the effect!</p>
+                    </div>
+                    <div class="count">
+                        <div class="row">
+                            <div class="count1">
+                                <h3>Column 1</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                            </div>
+                            <div class="count1">
+                                <h3>Column 2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                            </div>
+                            <div class="count1">
+                                <h3>Column 3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="count2">Try it Yourself »</a>
+                    </div>
+                </div>
+                <div class="count3">
+                    <p>Click on the "Try it Yourself" button to see how it works.</p>
+                </div>
+                <hr>
+
+                <hr>
+                <h2>Bootstrap 5 vs. Bootstrap 3 & 4</h2>
+                <p class="count4 row5">Bootstrap 5 is the newest version of <a href="#" >Bootstrap</a>; with new components,
+                    faster stylesheet and more responsiveness.</p>
+                <p class="count4">
+                    Bootstrap 5 supports the latest, stable releases of all major browsers and platforms. However,
+                    Internet Explorer 11 and down is not supported.
+                </p>
+                <p class="count4 row5">
+                    The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to
+                    <a href="#">JavaScript</a> instead of <a href="#">jQuery</a>.
+                </p>
+                <div class="count3 row5">
+                    <p> <strong>Note:</strong> <a href="#">Bootstrap 3</a> and <a href="#">Bootstrap 4</a> is still
+                        supported by the team for critical bugfixes and documentation changes, and it is perfectly safe
+                        to continue to use them. However, new features will NOT be added to them.</p>
+                </div>
+                <hr>
+                <h2>Bootstrap 5 Exercises</h2>
+                <form autocomplete="off" class="count5" action="#" method="post">
+                    <h2>Test Yourself With Exercises</h2>
+                    <div class="count6">
+                        <h2>Exercise:</h2>
+                        <p>Use a Bootstrap class to center the following text:</p>
+                    <div class="count7"> 
+                        <p style="border: none;">
+                       < p class="" <input type="search" maxlength="11" style="width: 115px;">"> Hello World! < /p> </p>
+                    </div>
+                    <br>
+                    <button class="count8">Submit Answer »</button>
+                    <p class="row5"><a href="#">Start the Exercise</a></p>
+                    </div>
+                </form>
+                <hr>
+                <h2>Bootstrap 5 Quiz Test</h2>
+                <p class="row1">Test your Bootstrap 5 skills at W3Schools!</p>
+                <p class="row1"><a href="#" class="count9">Start Bootstrap 5 Quiz!</a></p>
+                <hr>
+                <h2>My Learning</h2>
+                <p class="row1">Track your progress with the free "My Learning" program here at W3Schools.</p>
+                <p class="row1">Log into your account, and start earning points!</p>
+                <p class="row1">This is an optional feature. You can study W3Schools without using My Learning.</p>
+                <a href="#"><img src="mylearning.png" style="max-width: 100%;"></a>
+                <br>
+                <hr>
+                <div>
+                <div class="row2">
+                    <a href="#" class="row3">
+                    <span style="color: #999;">❮ Home</span>
+                    <br>
+                    <span>w3schools.com</span></a>
+                    <a href="#" class="row4">
+                    <span style="color:#D9EEE1;">Next ❯</span>
+                    <br>
+                    <span>Get Started with BS5</span></a>
+                </div>
+            </div>
+            </div>
+            <div class="row6"></div>
+        </div>
+    </header>
+
 </body>
 
 </html>
