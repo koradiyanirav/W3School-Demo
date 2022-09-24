@@ -488,3 +488,23 @@ a{
     float: right;
     border-radius: 5px;
 }
+
+@font-face {
+    font-family: 'fontawesome';
+    src:  url('fontawesome.woff2') format('woff2');
+  }
+
+.fa {
+    display:inline-block;
+    font:normal normal normal 14px/1 fontawesome;
+    font-size:inherit;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    transform:translate(0, 0);
+    }
+
+    .fa-logo:before { content: '\e822'; }
+    .ws-text-green {
+        color: #04AA6D!important;
+    }
