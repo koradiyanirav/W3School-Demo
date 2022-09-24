@@ -58,12 +58,6 @@ html, body{
     position: relative;
 }
 
-@media screen and (min-width: 480px) {
-    .btn{
-        width: 40px;
-    }
-}
-
 .btn1 {
     background-color: #282A35;
     text-align: center;
@@ -106,12 +100,6 @@ html, body{
     width: 100%;
     position: relative;
     top: 0;
-}
-
-@media screen and(min-width: 480px) {
-    .navbar{
-        width: 400px;
-    }
 }
 
 .nav {
