@@ -58,12 +58,6 @@ html, body{
     position: relative;
 }
 
-@media screen and (min-width: 480px) {
-    .btn{
-        width: 40px;
-    }
-}
-
 .btn1 {
     background-color: #282A35;
     text-align: center;
@@ -108,11 +102,6 @@ html, body{
     top: 0;
 }
 
-@media screen and(min-width: 480px) {
-    .navbar{
-        width: 400px;
-    }
-}
 
 .nav {
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
