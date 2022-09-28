@@ -1,0 +1,21 @@
+body{
+    margin: 0px;
+}
+
+.row{
+    background-color: blue;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+}
+
+.colum{
+    text-align: start;
+}
