@@ -11,36 +11,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sty.css">
     <title>Bs5Home</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <nav class="nav" style="height: 75px;padding: 14px 16px;">
-                <a href="#" class="nav-link" title="Home"><img src="logo.png" alt="" style="height: 30px;"></a>
-                <a class="nav-link text-dark fs-3" href="#">Tutorials<i class="fa fa-caret-down" style="font-size:20px;"></i>
-                <i class="fa fa-caret-up" style="display:none"></i></a>
-                <a class="nav-link text-dark fs-3" href="#">References<i class="fa fa-caret-down" style="font-size:20px;"></i>
-                    <i class="fa fa-caret-up" style="display:none"></i></a>
-                <a class="nav-link text-dark fs-3" href="#">Exercises<i class="fa fa-caret-down" style="font-size:20px;"></i>
-                    <i class="fa fa-caret-up" style="display:none"></i></a>
-                <a class="nav-link text-dark fs-3" href="#">Video</a>
-                <div>
-                    <nav class="nav float-end">
-                        <a href="#" class="nav-link float-end text-dark fs-3">Log in</a>
-                        <a href="#" class="nav-link text-dark fs-3">Free Website</a>
-                        <a href="#" class="nav-link text-dark fs-3">Get Certified</a>
-                        <a href="#" class="nav-link text-dark fs-3">Pro</a>
-                    </nav>
-                </div>
-            </nav>
-        </div>
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-white" aria-current="page" href="#"><i class="fa fa-home"
-                            style="font-size:24px"></i></a>
+                    <a class="navbar-brand text-white" aria-current="page" href="#"><i class="fa fa-home"></i></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -84,13 +63,8 @@
                     </div>
                 </div>
             </nav>
-        </div>
-        <div>
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-dark"
-                style="width: 220px; background-color: #E7E9EB;">
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                    <h1 class="fs-4">Bootstrap 5 Tutorial</h1>
-                </a>
+            <div class="d-inline-flex flex-column  flex-shrink-0 p-3 text-dark sticky-top">
+                <h1 class="fs-4">Bootstrap 5 Tutorial</h1>
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
                         <a href="#" class="nav-link fs-4 text-dark" aria-current="page">
@@ -119,7 +93,54 @@
                     </li>
                 </ul>
             </div>
-        </div>
+            <button type="button" class="btn btn-danger d-inline-flex" data-bs-toggle="modal" data-bs-target="#btn1">
+                Open
+            </button>
+            <div class="modal" id="btn1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Welcome</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fuga neque hic eius sapiente placeat ipsam ex saepe omnis accusamus delectus
+                            fugit laudantium provident, expedita aspernatur animi dolore atque magni
+                            natus earum perspiciatis? Delectus magnam laudantium provident error odio
+                            neque accusamus necessitatibus omnis sapiente consectetur sequi ullam in
+                            unde, ipsam totam.</div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div id="demo" class="carousel slide container h-100 d-inline-flex position-relative top-0" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" class="active"></button>
+                <button type="button" data-bs-target="#demo"></button>
+                <button type="button" data-bs-target="#demo"></button>
+            </div>
+
+            <div class="carousel-inner mt-3 mx-5">
+                <div class="carousel-item active">
+                    <img src="lion1.gif" class="d-block w-25">
+                </div>
+                <div class="carousel-item">
+                    <img src="lion2.gif" class="d-block w-25">
+                </div>
+                <div class="carousel-item">
+                    <img src="lion1.gif" class="d-block w-25">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
     </header>
 </body>

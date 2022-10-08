@@ -19,3 +19,21 @@ body{
 .colum{
     text-align: start;
 }
+
+.fa-home{
+    font-size: 24px;
+}
+
+.nav-link{
+    font-size: 24px;
+}
+
+.flex-shrink-0{
+    top: 51px;
+    width: 220px; 
+    background-color: #E7E9EB;
+}
+
+/* .btn-danger{
+    float: left;
+} */
