@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+
+    <title>Download File</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .col1 {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Fuzzy Bubbles';
+        }
+
+        .sidebar a {
+            height: 50px;
+            width: 250px;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 25px;
+            color: rgb(20, 20, 20);
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #e6e6e6;
+        }
+
+        .main {
+            height: 150px;
+            width: 1000px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            font-size: 20px;
+            font-family: cursive;
+        }
+
+        table,
+        tr {
+            font-size: 20px;
+            width: 800px;
+        }
+
+        table {
+            height: 400px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e7e6e6;
+        }
+
+        th,
+        td {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .baton{
+            padding-left: 5rem!important;
+            font-family: 'Fuzzy Bubbles';
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .baton a{
+            width: 115px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="col1">
+            <h2 class="text-dark text-start ps-4 fs-2 pt-5 fw-normal">MENU</h2>
+            <div class="sidebar p-0">
+                <a href="report.html" class="ms-0"><img src="report.svg" class="h-75 pe-4"> Report</a>
+                <a href="#" class="ms-0"><img src="upload.svg" class="h-75 pe-4"> Upload</a>
+                <a href="#" class="ms-0"><img src="history.svg" class="h-75 pe-3"> History</a>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="main"><select id="datatype" class="border-0 m-3">
+                    <option>JAVASCRIPT</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>SQL</option>
+                    <option>PYTHON</option>
+                    <option>JAVA</option>
+                    <option>PHP</option>
+                    <option>BOOTSTRAP</option>
+                    <option>C++</option>
+                    <option>C</option>
+                </select></div>
+                <div class="baton m-3">
+                    <a href="report.html" target="_blank"><button class="border-0 rounded-2 fs-5 text-center"><img src="add.svg" class="pe-3">ADD</button></a>
+                </div>
+        <div class="d-flex justify-content-center">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>No</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Type</th>
+                        <th>Filename</th>
+                        <th>Download</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>25-05-2001</td>
+                        <td>12-11-2001</td>
+                        <td>HTML</td>
+                        <td>.html</td>
+                        <td><i class="fa fa-download" aria-hidden="true"></i></td>
+                        <td><img src="trash.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>06-08-2002</td>
+                        <td>13-12-2002</td>
+                        <td>CSS</td>
+                        <td>.css</td>
+                        <td><i class="fa fa-download" aria-hidden="true"></i></td>
+                        <td><img src="trash.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>12-05-2003</td>
+                        <td>12-06-2003</td>
+                        <td>JAVASCRIPT</td>
+                        <td>.js</td>
+                        <td><i class="fa fa-download" aria-hidden="true"></i></td>
+                        <td><img src="trash.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>08-10-2004</td>
+                        <td>12-11-2004</td>
+                        <td>SQL</td>
+                        <td>.sql</td>
+                        <td><i class="fa fa-download" aria-hidden="true"></i></td>
+                        <td><img src="trash.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>27-05-2005</td>
+                        <td>22-08-2005</td>
+                        <td>PYTHON</td>
+                        <td>.py</td>
+                        <td><i class="fa fa-download" aria-hidden="true"></i></td>
+                        <td><img src="trash.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>10-01-2006</td>
+                        <td>11-06-2006</td>
+                        <td>JAVA</td>
+                        <td>.java</td>
+                        <td><i class="fa fa-download" aria-hidden="true"></i></td>
+                        <td><img src="trash.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>17-05-2007</td>
+                        <td>01-08-2007</td>
+                        <td>PHP</td>
+                        <td>.php</td>
+                        <td><i class="fa fa-download" aria-hidden="true"></i></td>
+                        <td><img src="trash.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>20-02-2008</td>
+                        <td>22-12-2009</td>
+                        <td>BOOTSTRAP</td>
+                        <td>.css</td>
+                        <td><i class="fa fa-download" aria-hidden="true"></i></td>
+                        <td><img src="trash.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>23-10-2010</td>
+                        <td>05-05-2012</td>
+                        <td>C++</td>
+                        <td>.cpp</td>
+                        <td><i class="fa fa-download" aria-hidden="true"></i></td>
+                        <td><img src="trash.svg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>24-10-2013</td>
+                        <td>12-07-2017</td>
+                        <td>C</td>
+                        <td>.c</td>
+                        <td><i class="fa fa-download" aria-hidden="true"></i></td>
+                        <td><img src="trash.svg" alt=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>

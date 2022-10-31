@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="prefetch" href="fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="bs5w3style.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Bootstrap 5 Get Started</title>
+</head>
+
+<body>
+    <div class="bg-white logo d-flex justify-content-between">
+        <div class="d-flex">
+            <a href="https://www.w3schools.com" class="logo1" title="Home">
+                <i class="fa fa-logo ws-text-green ws-hover-text-green position-relative d-inline-block"
+                    style="font-size:42px!important;padding: 16px;"></i>
+            </a>
+            <a class="lo lo2 text-decoration-none" href="javascript:void(0)" onclick="w3_open_nav('tutorials')"
+                title="Tutorials">Tutorials
+                <i class="fa fa-caret-down" style="font-size: 20px; display: inline;"></i>
+                <i class="fa fa-caret-up" style="display: none;"></i>
+            </a>
+            <a href="#" class="lo lo2 text-decoration-none" title="References">References
+                <i class="fa fa-caret-down" style="font-size: 20px; display: inline;"></i>
+                <i class="fa fa-caret-up" style="display: none;"></i>
+            </a>
+            <a href="#" class="lo lo2 text-decoration-none" title="Exercises">Exercises
+                <i class="fa fa-caret-down" style="font-size: 20px; display: inline;"></i>
+                <i class="fa fa-caret-up" style="display: none;"></i>
+            </a>
+            <a href="#" class="lo lo2 text-decoration-none" title="Video Tutorials">Videos</a>
+        </div>
+        <div class="menu-rh d-flex">
+            <a href="#"
+                class="lo2-gray d-flex justify-content-center align-items-center text-bg-dark text-decoration-none text-center me-3 rounded-5 border-0 btn1"
+                title="Go pro and unlock powerful features">Pro</a>
+            <a href="#"
+                class="lo2 lo2-pink d-flex justify-content-center align-items-center text-dark text-center me-3 rounded-5 border-0 btn2"
+                title="Courses">Get Certified</a>
+            <a href="#"
+                class="lo2 lo2-yellow d-flex justify-content-center align-items-center text-dark text-center me-3 rounded-5 border-0 btn3"
+                title="Get Your Own Website With W3Schools Spaces">Free Website</a>
+            <a href="#"
+                class="lo2 lo2-green d-flex text-center justify-content-center align-items-center rounded-5 border-0 text-bg-success btn4">Log
+                in</a>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between text-bg-dark navbar1 nav1 sticky-top">
+        <div class="d-flex">
+            <a href="https://www.w3schools.com/default.asp" class=" text-white" title="Home"><i class="fa fa-home"
+                    style="font-size: 22px;"></i></a>
+            <a href="https://www.w3schools.com/html/default.asp"
+                style="padding-left:18px!important;padding-right:18px!important;" title="HTML Tutorials">HTML</a>
+            <a href="https://www.w3schools.com/css/default.asp" title="CSS Tutorials">CSS</a>
+            <a href="https://www.w3schools.com/js/default.asp" title="JavaScript Tutorials">JAVASCRIPT</a>
+            <a href="https://www.w3schools.com/sql/default.asp" title="SQL Tutorial">SQL</a>
+            <a href="https://www.w3schools.com/python/default.asp" title="Python Tutorials">PYTHON</a>
+            <a href="https://www.w3schools.com/java/default.asp" title="Java Tutorials">JAVA</a>
+            <a href="https://www.w3schools.com/php/default.asp" title="PHP Tutorials">PHP</a>
+            <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" class="bg-success"
+                title="Bootstrap Tutorials">BOOTSTRAP</a>
+            <a href="https://www.w3schools.com/howto/default.asp" title="How To Tutorials">HOW TO</a>
+            <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS Tutorials">W3.CSS</a>
+            <a href="https://www.w3schools.com/c/index.php" title="C Tutorials">C</a>
+            <a href="https://www.w3schools.com/cpp/default.asp" title="C++ Tutorials">C++</a>
+            <a href="https://www.w3schools.com/cs/index.php" title="C# Tutorials">C#</a>
+            <a href="https://www.w3schools.com/r/default.asp" title="R Tutorials">R</a>
+        </div>
+        <div class="d-flex">
+            <a aria-current="page" href="#" class="topnav-icon"><i class="fa fa-adjust"></i></a>
+            <a href="#" title="Translate W3Schools" class="topnav-icon"><i class="fa-solid fa-earth-americas"></i></a>
+            <a href="#" title="Search W3Schools" class="topnav-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </div>
+    <div class="d-flex">
+        <div>
+            <div class="d-inline-flex sidebar-first">
+                <div class="sidebar d-flex flex-column">
+                    <h1 class="sidenav">Bootstrap 5 Tutorial</h1>
+                    <a href="bs1.html">BS5 HOME</a>
+                    <a href="bs2.html" class="text-bg-success">BS5 Get
+                        Started</a>
+                    <a href="Bs5containers.html">BS5
+                        Containers</a>
+                    <a href="Bs5grids.html">BS5 Grid
+                        Basic</a>
+                    <a href="Bs5typography.html">BS5 Typography</a>
+                    <a href="Bs5colors.html">BS5 Colors</a>
+                    <a href="#">BS5 Tables</a>
+                    <a href="#">BS5 Images</a>
+                    <a href="#">BS5 Jumbotron</a>
+                    <a href="#">BS5 Alerts</a>
+                    <a href="#">BS5 Buttons</a>
+                    <a href="#">BS5 Button Groups</a>
+                    <a href="#">BS5 Badges</a>
+                    <a href="#">BS5 Progress Bars</a>
+                    <a href="#">BS5 Spinners</a>
+                    <a href="#">BS5 Pagination</a>
+                    <a href="#">BS5 List Groups</a>
+                    <a href="#">BS5 Cards</a>
+                    <a href="#">BS5 Dropdowns</a>
+                    <a href="#">BS5 Collapse</a>
+                    <a href="#">BS5 Navs</a>
+                    <a href="#">BS5 Navbar</a>
+                    <a href="#">BS5 Carousel</a>
+                    <a href="#">BS5 Modal</a>
+                    <a href="#">BS5 Tooltip</a>
+                    <a href="#">BS5 Popover</a>
+                    <a href="#">BS5 Toast</a>
+                    <a href="#">BS5 Scrollspy</a>
+                    <a href="#">BS5 Offcanvas</a>
+                    <a href="#">BS5 Utilities</a>
+                    <a href="#">BS5 Flex</a>
+                    <br>
+                    <h1 class="sidenav">Bootstrap 5 Forms</h1>
+                    <a href="#">BS5 Forms</a>
+                    <a href="#">BS5 Select Menus</a>
+                    <a href="#">BS5 Checks and Radios</a>
+                    <a href="#">BS5 Range</a>
+                    <a href="#">BS5 Input Groups</a>
+                    <a href="#">BS5 Floating Labels</a>
+                    <a href="#">BS5 From Validation</a>
+                    <br>
+                    <h1 class="sidenav">Bootstrap 5 Grid</h1>
+                    <a href="#">BS5 Grid System</a>
+                    <a href="#">BS5 Stacked/Horizontal</a>
+                    <a href="#">BS5 Grid XSmall</a>
+                    <a href="#">BS5 Grid Small</a>
+                    <a href="#">BS5 Grid Midium</a>
+                    <a href="#">BS5 Grid Large</a>
+                    <a href="#">BS5 Grid XLarge</a>
+                    <a href="#">BS5 Grid XXL</a>
+                    <a href="#">BS5 Grid Examples</a>
+                    <br>
+                    <h1 class="sidenav">Bootstrap 5 Other</h1>
+                    <a href="#">BS5 Basic Template</a>
+                    <a href="#">BS5 Exercises</a>
+                    <a href="#">BS5 Quiz</a>
+                    <a href="#">BS5 Certificate</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="hello">
+                <h1>Bootstrap 5 Get Started</h1>
+                <div class="ho d-flex justify-content-between">
+                    <div class="d-flex">
+                        <a href="#" class="home"> ❮ Home</a>
+                    </div>
+                    <div class="d-flex">
+                        <a href="#" class="home">Next ❯</a>
+                    </div>
+                </div>
+                <hr>
+                <h2>What is Bootstrap?</h2>
+                <ul>
+                    <li>Bootstrap is a free front-end framework for faster and easier web development</li>
+                    <li>Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins</li>
+                    <li>Bootstrap also gives you the ability to easily create responsive designs</li>
+                </ul>
+                <div class="count3 row5">
+                    <p><strong>What is Responsive Web Design?</strong>
+                        <br>
+                        <br>
+                        Responsive web design is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops.
+                    </p>
+                </div>
+            <div class="pera1">
+                <h3>Bootstrap 5 Example</h3>
+            </div>
