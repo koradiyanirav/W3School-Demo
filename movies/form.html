@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css">
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="continer">
+      <div class="item">
+          <form class="item1">
+            <div class="item4">
+                <h1 class="titel">Contact</h1>
+            </div>
+            <div class="item4">
+                <div class="item3">
+                  <div class="Name">
+                      <label for="name" >Full Name</label>
+                      <input type="text" name="name" id="name" class="Text" placeholder="Enter Movie Title" required/>
+                  </div>
+                  <div class="Name">
+                      <label for="email" >Email</label>
+                      <input type="email" name="email" id="email" class="Email Text" placeholder="Enter Your Email"
+                        required/>
+                  </div>
+                </div>
+                <div class="item3">
+                  <label for="subject" class="subject">Subject</label>
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    class="Subject"
+                    placeholder="Enter Your Subject"
+                    required
+                  />
+                </div>
+                <div class="item3">
+                  <label for="message" class="message">Your Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="4"
+                    class="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="item2">
+                  <button type="submit" name="submit" id="submit" class="Submit">
+                    Submit
+                  </button>
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
