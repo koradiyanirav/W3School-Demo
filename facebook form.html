@@ -54,9 +54,11 @@
                     <div class="was-validated">    
                         <input type="password" data-type="text" class="form-control" id="Password" placeholder="Password"
                             name="password" required>
-                            <div class="invalid-feedback">
+                            <span class="valid-feedback flex">Show Password <input type="checkbox" class="bg-green-400" onclick="Fbfunction()"></span> 
+                            <div class="invalid-feedback"> 
                                 Please Enter Your Valid Password.
                             </div>
+                          
                     </div>
                     <div>
                         <button class="form-control text-center text-bg-primary">Log in</button>
@@ -79,5 +81,14 @@
         </div>
     </div>
 </body>
-
+<script>
+    function Fbfunction(){
+        var a = document.getElementById("Password");
+        if (a.type === "password") {
+            a.type = "text";
+        } else {
+            a.type = "password";
+        }
+    }
+</script>
 </html>
